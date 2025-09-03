@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAHAYA JUDI ONLINE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+        
+        .title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+            color: #ff0000;
+            animation: pulse 2s infinite;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #f8f8f8;
+        }
+        
+        .warning-card {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .warning-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #ff0000, #ffff00, #ff0000);
+            animation: slide 3s linear infinite;
+        }
+        
+        .message {
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #ffff00;
+            text-shadow: 0 0 5px rgba(255, 255, 0, 0.7);
+        }
+        
+        .personal-message {
+            font-size: 2.2rem;
+            text-align: center;
+            font-weight: bold;
+            color: #ff0000;
+            margin: 30px 0;
+            text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+            animation: shake 0.5s ease-in-out infinite alternate;
+        }
+        
+        .mahjong-warning {
+            font-size: 1.8rem;
+            text-align: center;
+            color: #ffffff;
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+        
+        .consequences {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .consequence {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border-left: 4px solid #ff0000;
+            transition: transform 0.3s ease;
+        }
+        
+        .consequence:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 0, 0, 0.2);
+        }
+        
+        .consequence h3 {
+            color: #ff0000;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .consequence p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+        .mahjong-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin: 40px 0;
+            opacity: 0.3;
+        }
+        
+        .mahjong-tile {
+            aspect-ratio: 1;
+            background: #f8f8f8;
+            border: 1px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #333;
+            border-radius: 3px;
+        }
+        
+        .help-section {
+            text-align: center;
+            margin: 50px 0;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+        }
+        
+        .help-title {
+            font-size: 2rem;
+            color: #00ff00;
+            margin-bottom: 20px;
+        }
+        
+        .resources {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .resource {
+            background: rgba(0, 255, 0, 0.1);
+            border: 1px solid #00ff00;
+            padding: 15px 25px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            color: #00ff00;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes pulse {
+            0% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+            50% { text-shadow: 0 0 20px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8); }
+            100% { text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            50% { transform: translateX(0); }
+            75% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2.5rem;
+            }
+            
+            .message, .personal-message, .mahjong-warning {
+                font-size: 1.5rem;
+            }
+            
+            .mahjong-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">BAHAYA JUDI ONLINE</h1>
+            <p class="subtitle">Peringatan Keras Tentang Dampak Mengerikan Perjudian</p>
+        </header>
+        
+        <div class="warning-card">
+            <p class="message">
+                PERJUDIAN BUKAN HIBURAN, TAPI BENCANA YANG MEMBAWA KEMUSNAHAN!
+            </p>
+            
+            <p class="personal-message">
+                MAS WILLY, STOP MAIN JUDI!
+            </p>
+            
+            <p class="message">
+                AZAB BERMAIN JUDI... MENINGGAL KUBURAN DIPENUHI MAHJONG!
+            </p>
+            
+            <p class="mahjong-warning">
+                Ingat! Setiap kali kamu berjudi, kamu sedang menggali kuburanmu sendiri. 
+                Kuburanmu akan dipenuhi dengan batu-batu mahjong sebagai tanda azab atas dosa perjudianmu.
+            </p>
+        </div>
+        
+        <div class="consequences">
+            <div class="consequence">
+                <h3>KEHANCURAN FINANSIAL</h3>
+                <p>Hilangnya seluruh harta benda, utang yang menumpuk, dan kemiskinan yang tak berujung.</p>
+            </div>
+            <div class="consequence">
+                <h3>KEHANCURAN KELUARGA</h3>
+                <p>Perceraian, kehilangan kepercayaan keluarga, dan anak-anak yang terlantar.</p>
+            </div>
+            <div class="consequence">
+                <h3>KEHANCURAN SPIRITUAL</h3>
+                <p>Jiwa yang gelap, hati yang keras, dan jauh dari rahmat Tuhan.</p>
+            </div>
+            <div class="consequence">
+                <h3>KEHANCURAN MENTAL</h3>
+                <p>Depresi, kecemasan, gangguan tidur, dan pikiran untuk bunuh diri.</p>
+            </div>
+        </div>
+        
+        <div class="mahjong-grid" id="mahjongGrid"></div>
+        
+        <div class="help-section">
+            <h2 class="help-title">MAS WILLY, MASIH ADA HARAPAN!</h2>
+            <p>Kamu bisa berhenti sekarang juga. Hidupmu masih berharga.</p>
+            
+            <div class="resources">
+                <div class="resource">Cari dukungan keluarga</div>
+                <div class="resource">Hubungi konselor profesional</div>
+                <div class="resource">Fokus pada ibadah dan spiritualitas</div>
+                <div class="resource">Isi waktu dengan aktivitas positif</div>
+            </div>
+        </div>
+        
+        <div class="warning-card">
+            <p class="message">
+                azab main judi kuburan penuh batu mahjong!
+            </p>
+            <p class="personal-message">
+                STOP JUDI, MAS WILLY!
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Peringatan ini dibuat untuk menyadarkan tentang bahaya perjudian online</p>
+        <p>Untuk kesejahteraan hidup dunia dan akhirat</p>
+    </footer>
+    
+    <script>
+        // Generate mahjong tiles
+        const mahjongGrid = document.getElementById('mahjongGrid');
+        const symbols = ['🀇', '🀈', '🀉', '🀊', '🀋', '🀌', '🀍', '🀎', '🀏', 
+                        '🀐', '🀑', '🀒', '🀓', '🀔', '🀕', '🀖', '🀗', '🀘', '🀙',
+                        '🀀', '🀁', '🀂', '🀃', '🀆', '🀇', '🀈', '🀉', '🀊', '🀋'];
+        
+        for (let i = 0; i < 50; i++) {
+            const tile = document.createElement('div');
+            tile.className = 'mahjong-tile';
+            tile.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            mahjongGrid.appendChild(tile);
+        }
+        
+        // Add continuous animation to the personal message
+        const personalMessages = document.querySelectorAll('.personal-message');
+        personalMessages.forEach(msg => {
+            msg.style.animation = 'shake 0.6s ease-in-out infinite alternate';
+        });
+    </script>
+</body>
+</html>
